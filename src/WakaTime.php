@@ -138,8 +138,12 @@ class WakaTime
         return $this->makeRequest("users/current/durations?date={$date}" . $project . $branches);
     }
 
-    public function testMethod() {
-
+    /**
+     * See https://wakatime.com/developers#projects for details.
+     * @return user projects
+     */
+    public function projects() {
+        return $this->makeRequest("users/current/projects");
     }
 
 }
