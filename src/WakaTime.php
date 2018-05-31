@@ -138,4 +138,8 @@ class WakaTime
         return $this->makeRequest("users/current/durations?date={$date}" . $project . $branches);
     }
 
+    public function testMethod() {
+
+    }
+
 }
